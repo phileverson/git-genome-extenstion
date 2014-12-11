@@ -1,0 +1,9 @@
+00000-Phil's Project Status Tracking
+
+To do:
+- Add GA (so we can see if ppl actually use it) 
+Update: GA now added, need to confirm the data is appearing analytics account, but events are firing (based on the debugger)
+Update 2: GA is deginitly working, firing either a success or failure event. Doesn't seem to fire pageviews, but that's cool with me...
+
+- Package it all up nice and tidy so that ppl can install it easily
+- Find away to host it not publickly...

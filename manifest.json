@@ -1,0 +1,31 @@
+{
+  "name": "Genome + GIT Parser (Prod)",
+  "description": "Automatically copy a preformatted commit message for any Genome ticket!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "options_page":"options.html",
+  "background": {
+    "scripts": ["event.js"],
+    "persistent": false
+  },
+  "permissions": [
+        "tabs", 
+        "http://*/*", 
+        "https://*/*"
+    ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": { "16": "v1_icon_16.png",
+           "48": "v1_icon_48.png"
+          },
+  "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "MacCtrl+Shift+S"
+      }
+    }
+  }
+}

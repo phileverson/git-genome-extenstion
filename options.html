@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Scripts -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Cascading Style Sheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+
+        .page-header {
+            margin-bottom: 10px !important;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Begin page content -->
+    <div class="container" style="">
+        <div class="page-header">
+            <h1><img src="v1_icon.png" style="height:55px; margin-right: 15px;" alt="">Genome Ticket GIT Formatter</h1>
+        </div>
+        <p>Sorry! There aren't actually any options yet...but if you think there should be something here, please feel free to let me know what!</p>
+
+        <div class="page-header" style="padding-bottom:2px">
+            <h3 style="margin-bottom:2px">Help/How To Use</h3>
+        </div>
+        <ol>
+            <li>Open any Genome ticket.</li>
+            <li>On your keyboard, press Control+Shift+S to open the popup and automatically copy the message, or press the Genome + GIT icon from your chrome toolbar.</li>
+        </ol>
+
+        <div class="page-header" style="padding-bottom:2px">
+            <h3 style="margin-bottom:2px">Feedback</h3>
+        </div>
+        <p>Have an idea for a new feature, think we need to add some options to the actual options page, or just want to let me know what you think? ...this is where to do it!</p>
+
+        <div id="successMessageFeedback" class="alert alert-success" role="alert" style="margin-bottom: 10px; display:none">
+            <strong>Thanks!</strong> Your feedback has been successfully submitted!
+        </div>
+
+        <iframe id="hidden_iframe" name="hidden_iframe" style="display: none;"></iframe>
+
+        <form role="form" action="https://docs.google.com/forms/d/1RRHOIpkfr2AKyPz5r9uDvm72QEJejU5YxqF9yv1Wl8o/formResponse?embedded=true" method="POST" id="ss-form" target="hidden_iframe">
+            <div class="form-group">
+                <label for="entry_1318254141">Comment / Question / Feedback:</label>
+                <textarea name="entry.1318254141" rows="8" cols="0" class="ss-q-long form-control" id="entry_1318254141" dir="auto" aria-label="Comment / Question / Feedback  "></textarea>
+            </div>
+
+            <input type="hidden" name="draftResponse" value="[,,&quot;7286283472845250756&quot;]">
+            <input type="hidden" name="pageHistory" value="0">
+
+            <input type="hidden" name="fbzx" value="7286283472845250756">
+
+            <input type="submit" name="submit" value="Submit Feedback" id="ss-submit" class="jfk-button jfk-button-action btn btn-primary">
+
+        </form>
+
+
+        <div class="page-header" style="padding-bottom:2px">
+            <h3 style="margin-bottom:2px">Readme/Dev Notes</h3>
+        </div>
+        <ul>
+            <li>Design based on Chrome Extension Twitter Bootstrap 3 Template by <a href="https://github.com/Ehesp" target="_Blank">Elliot Hesp</a>.</li>
+            <li>Some code originally authored by <a href="http://markashleybell.com/building-a-simple-google-chrome-extension.html" target="_Blank">Mark Bell</a> in his "Building a simple Google Chrome extension" tutorial.</li>
+            <li>Awesome function for getting query string parameters from the address bar is courtessy <a href="http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript" target="_Blank">Stack Overflow user, jolly.exe...</a></li>
+        </ul>
+    </div>
+    <script src="options.js"></script>
+
+</body>
+</html>
+
